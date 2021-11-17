@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="heroImageSmall"><h1 id="heroTextSmall">EVENT.com</h1></div>
+    </header>
+    <nav id="sideNavigation">
+        <ul>
+<li><a href="/index.html">Hem</li>
+<li><a href="/events.html">Våra evenemang</a></li>
+<li class="active"><a href="/eventForm.html">Skapa evenemang</a></li>
+<li><a href="/aboutUs.html">Om oss</a></li>
+    </ul>
+</nav>
+<div class="content">
+  <h2>Skapa evenemang nedan:</h2>
+  <form>
+    <label for="eventName"></label><br>
+  <input type="text" id="eventName" name="eventName" placeholder="Event namn..."><br><br>
+  <label for="eventDate">Datum</label>
+  <input type="date" id="eventDate" name="eventDate"><br><br>
+  <label for="eventName">Kort beskrivning</label><br>
+  <textarea rows="5" cols="30"></textarea><br><br>
+  <label for="eventSchedule">Agenda händelser</label><br>
+  <ul id="eventSchedule">
+    <li>12:00 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia fuga consequatur?</li>
+    <li>15:00 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</li>
+    <li>18:00 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, minus?</li>
+  </ul>
+  <input type="text" id="scheduleItemInput" name="scheduleItemInput"><br>
+  <button id="addScheduleItem">Lägg till agenda händelse</button><br><br>
+  <div class="fileUploads">
+  <input type="file" class="eventImageFile" name="eventImage1">
+  <input type="file" class="eventImageFile" name="eventImage2">
+  <input type="file" class="eventImageFile" name="eventImage3">
+  <input type="file" class="eventImageFile" name="eventImage4">
+</div><br>
+<label for="eventCategories">Välj kategori</label>
+<select id="eventCategories">
+  <option value="Nöje">Nöje</option>
+  <option value="Utbildning">Utbildning</option>
+  <option value="Afterwork">Afterwork</option>
+</select>
+  <button id="createEventButton" type="submit">Skapa evenemang</button>
+  </form>
+</div>
+  </body>
+</html>
