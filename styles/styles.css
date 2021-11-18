@@ -302,16 +302,35 @@ nav#sideNavigation li {
   max-width: 100%;
   max-height: 100%;
 }
-.content #ceoImage {
+.content #aboutCEO {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.content #aboutCEO img {
   width: 200px;
 }
-.content section #teamImage {
-  background-image: url("https://images.unsplash.com/photo-1603201667230-bd139210db18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
-  background-position: center;
-  position: relative;
-  width: 700px;
-  height: 250px;
+.content #aboutCEO p {
+  width: 60%;
+  display: inline;
+  padding: 0 20px;
+}
+.content section {
   margin: auto;
+  width: 70%;
+  padding: 30 100px;
+}
+.content section span {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+.content section #teamImage {
+  display: block;
+  max-width: 700px;
+  width: 75%;
+  height: auto;
+  margin: 20px auto;
 }
 
 form {
@@ -407,6 +426,10 @@ form .fileUploads .eventImageFile {
   #wrapper .events .eventCard {
     min-width: 200px;
   }
+}
+.orangeHeader {
+  color: #f06c00;
+  margin: 170px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
