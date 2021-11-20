@@ -1,13 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;900&family=Major+Mono+Display&display=swap");
+
+$headerFont: "major mono display";
+$mainFont: "barlow condensed";
+
 $heroImage: url("https://images.unsplash.com/photo-1510682657356-6ee07db8204b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80");
 $mainGrey: rgb(48, 48, 48);
 $accentColor: rgb(240, 108, 0);
 $dateGrey: grey;
 
-@mixin buttonOrange() {
-    display: block;
+$standardBoxShadow: 3px 3px 7px lightgrey;
+
+@mixin hero() {
+  background-image: $heroImage;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  h1 {
+    font-family: $headerFont;
     text-align: center;
-    color: white;
-    width: 100%;
-    background-color: $accentColor;
-    padding: 5px 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin contentStandard() {
+  padding: 20px 50px;
+}
+
+@mixin buttonOrange {
+  display: block;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  background-color: $accentColor;
+  padding: 5px 0;
+  border-style: none;
+}
+
+@mixin horizontalNavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainGrey;
+  color: white;
+  height: 35px;
+
+  a {
+    @include navigationA;
+    width: 20%;
+    &:hover {
+      background-color: $accentColor;
+    }
+  }
+}
+
+@mixin navigationA {
+  font-size: 1.2em;
+  height: 32px;
+  padding: 3px 0 0 0;
+  color: white;
+  text-align: center;
+}
+
+@mixin cardGrid($gridColumns: auto auto auto) {
+  display: grid;
+  grid-template-columns: $gridColumns;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  margin: auto;
+  justify-content: center;
 }

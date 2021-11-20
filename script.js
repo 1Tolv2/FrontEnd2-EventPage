@@ -25,10 +25,10 @@ $(function () {
     $(this).remove();
   });
 
-  $("#contactButton").on("click", function () {
-    $("#contactForm").hide();
+    $("#contactButton").on("click", function () {
+      $("#contactForm").hide();
 
-    const formHeader = $("#contactForm").siblings("h2");
-    $(formHeader).text("Tack för att du kontaktar oss!").addClass("orangeHeader");
+      const formHeader = $("#contactForm").siblings("h2");
+      $(formHeader).text("Tack för att du kontaktar oss!").addClass("orangeHeader");
   });
 });

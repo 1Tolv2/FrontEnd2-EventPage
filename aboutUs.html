@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-    ></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">    </script>
     <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="heroImageSmall"><h1 id="heroTextSmall">EVENEMANG</h1></div>
-    </header>
-    <nav id="sideNavigation">
-        <ul>
-<li><a href="/index.html">Hem</li>
-<li><a href="/events.html">Våra evenemang</a></li>
-<li><a href="/eventForm.html">Skapa evenemang</a></li>
-<li class="active"><a href="/aboutUs.html">Om oss</a></li>
-    </ul>
-</nav>
-<div class="content">
-  <section>
-    <h2>Om företaget</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, natus soluta culpa cum similique veritatis ipsa! Distinctio cupiditate, consectetur, minima voluptatibus error ad provident hic sit dolorem ut excepturi eligendi.</p>
-  </section>
-  <section>
-    <h3>Teamet</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem a minima eveniet temporibus assumenda, fuga voluptas vero laborum pariatur!</p>
-</section>
-  <section>
-    <h3>Vår VD</h3>
-    <div id="aboutCEO">
-      <img src="images\businessWoman.jpg" alt="woman sitting outdoors">
-      <p><strong>Lauren Ipsum</strong>, dolor sit amet consectetur adipisicing elit. Harum quos beatae sint! Minus, aliquid deleniti sed at nulla eveniet incidunt.</p>
-    </div>
-    <span><a href="tel:+46771567567">0771-567 567</a></span><span><a href="mailto:Lauren.Ipsum@Event.com">Lauren.Ipsum@Event.com</a></span>
-    </section>
-  <section>
-    <div id="teamImage" ><img id="teamImage" src="https://images.unsplash.com/photo-1603201667230-bd139210db18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="group of people in front computer"></div>
-  <h2>Kontakta oss</h2>
-  <form id="contactForm">
-    <label for="">Namn</label><br/>
-    <input type="text" id=""><br/>
-    <label for="">E-mail</label><br/>
-    <input type="text" id=""><br/>
-    <label for="">Meddelande</label><br/>
-    <textarea rows="5"></textarea>
-    <button id="contactButton">Skicka</button>
-  </form>
-  </section>
+    <link rel="stylesheet" href="styles/styles.css"></link>
+    <title>EVENT.com</title>
+</head>
+<body>
+    <div id="smallHero"><h1>ABoUt uS</h1></div>
+    <nav class="verticalNavigation">
+        <a href="index.html">Hem</a>
+        <a href="/events.html">Alla evenemang</a>
+        <a class="activeNavLink" href="/aboutUs.html">Om oss</a>
+    </nav>
+    <div id="sideWrapper">
+        <article>
+            <h2>om företaget</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, natus soluta culpa cum similique veritatis ipsa! Distinctio cupiditate, consectetur, minima voluptatibus error ad provident hic sit dolorem ut excepturi eligendi.</p>
+            <h3>Teamet</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem a minima eveniet temporibus assumenda, fuga voluptas vero laborum pariatur!</p>
+            <section>
+                <h3>Vår VD</h3>
+                <div class="contentSideBySide">
+                  <img src="images\businessWoman.jpg" alt="woman sitting outdoors">
+                  <p><strong>Lauren Ipsum</strong>, dolor sit amet consectetur adipisicing elit. Harum quos beatae sint! Minus, aliquid deleniti sed at nulla eveniet incidunt.</p>
+                </div>
+                <span><a href="tel:+46771567567">0771-567 567</a></span><span><a href="mailto:Lauren.Ipsum@Event.com">Lauren.Ipsum@Event.com</a></span>
+                </section>    
+                <section>
+                    <div id="teamImage" ><img id="teamImage" src="https://images.unsplash.com/photo-1603201667230-bd139210db18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="group of people in front computer"></div>
+                  <h2>Kontakta oss</h2>
+                  <form id="contactForm">
+                    <label for="">Namn</label><br/>
+                    <input type="text" id=""><br/>
+                    <label for="">E-mail</label><br/>
+                    <input type="text" id=""><br/>
+                    <label for="">Meddelande</label><br/>
+                    <textarea rows="5"></textarea>
+                    <button id="contactButton">Skicka</button>
+                  </form>
+                  </section>    
+        </article>
 </div>
-  </body>
+</body>
 </html>
