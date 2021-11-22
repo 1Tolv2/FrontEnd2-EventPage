@@ -89,6 +89,9 @@ a {
       @include variables.buttonOrange;
       width: 300px;
       margin: 10px 0;
+      &#createEventButton {
+        width: 100%;
+      }
     }
   }
 }

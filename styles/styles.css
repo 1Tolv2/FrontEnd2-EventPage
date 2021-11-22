@@ -142,6 +142,9 @@ a {
   width: 300px;
   margin: 10px 0;
 }
+#centerWrapper form button#createEventButton {
+  width: 100%;
+}
 
 #sideWrapper {
   display: inline;
